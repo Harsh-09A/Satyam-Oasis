@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Satyam Oasis</title>
+
+    <!-- SEO -->
+    <meta property="og:title" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/logo/favicon.jpg" sizes="16x16" />
+
+    <!-- Prefetch -->
+    <link rel="prefetch" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="prefetch" href="https://cdnjs.cloudflare.com/" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"></script>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <!-- Fancy Box CDN -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+    <!-- EmailJS CDN -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/mail.js"></script>
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
+
+    <!-- Custom CSS & JS  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#main-navbar"
+    data-bs-root-margin="0px 0px -50%"
+    data-bs-smooth-scroll="true"
+    class="scrollspy"
+    tabindex="0"
+    data-offset="1">
+    <!-- Header Starts  -->
+    <header class="fixed-top shadow-sm">
+      <nav
+        class="navbar navbar-expand-lg mx-auto"
+        style="background-color: #ffffff"
+        id="main-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="img/logo/logo.png"
+              alt="Logo"
+              height="50px"
+              style="padding-left: 10%" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"> </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#slider_section">
+                  <i class="fa-solid fa-house nav-icon"></i>
+                  <span class="d-sm-inline"> Home </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#overview_section">
+                  <i class="fa-solid fa-coins nav-icon"></i>
+                  <span class="d-sm-inline"> Overview </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery_section">
+                  <i class="fa-solid fa-images nav-icon"></i>
+                  <span class="d-sm-inline"> Gallery </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#configuration_section">
+                  <i class="fa-solid fa-sliders nav-icon"></i>
+                  <span class="d-sm-inline"> Configuration </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#amenities_section">
+                  <i class="fa-solid fa-wifi nav-icon"></i>
+                  <span class="d-sm-inline"> Amenities </span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#location_section">
+                  <i class="fa-solid fa-map-location nav-icon"></i>
+                  <span class="d-sm-inline"> Location </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about_section">
+                  <i class="fa-solid fa-user nav-icon"></i>
+                  <span class="d-sm-inline"> About Us </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header Ends  -->
+    <main>
+      <!-- Slider Section -->
+      <section id="slider_section">
+        <!--  Slider -->
+        <div
+          id="carousel-Indicators"
+          class="carousel slide desktop-slider"
+          data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel-Indicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-Indicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="d-block w-100 banner1"
+                width="100%"
+                src="img/banners/desktop_banner1.jpg"
+                alt="Banner1" />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100 banner2"
+                width="100%"
+                src="img/banners/desktop_banner2.jpg"
+                alt="Banner2" />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel-Indicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel-Indicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- Slider Section Ends -->
+
+      <!--Overview Section  -->
+      <section id="overview_section" class="container p-4 mt-3">
+        <h2 class="section-heading text-center">Welcome to Satyam Oasis</h2>
+
+        <div class="row mt-4">
+          <div class="col-12 col-md-6 overview_img">
+            <img class="img-fluid" src="img/overview/overview.jpg" alt="" />
+          </div>
+          <div class="col-12 col-md-6">
+            <p class="overview-para mt-3">
+              Satyam Oasis is built with the sole purpose of keeping you
+              well-connected. A thoughtfully chosen location that is emerging as
+              well as easily accessible. Satyam Oasis is a promising & upcoming
+              hub of the town offering 1BHK & 2BHK apartments. We bring you
+              convenience, luxury and sophisticated living at exceptional
+              prices. Satyam Oasis brings Milestone Residency Apartments
+              overlooking the Metro Station. Walk to the comfort of your
+              residence and save your precious commuting time. Satyam Oasis
+              harbors an absolute comfort at the core of the bustling town.
+              <br /><br />
+              Residences located adjoining the Metro rail head that connects you
+              to Belapur, Kharghar & nearby suburbs. Strategically
+              well-connected roads and flyover ensure you are in easy reach of
+              suburbs like Kharghar and Belapur in no time. Satyam Oasis brings
+              you the finest living experience in 1BHK & 2BHK apartments.
+              Developed with essential amenities and strategically placed in the
+              core of the town ensuring simplified living. At Satyam Oasis
+              walk-in to a property that emanates class. Amenities like a
+              Gymnasium, Indoor Games Arena, a Landscaped Garden and Children’s
+              Play Area bring a full-filled living experience.
+            </p>
+            <button
+              class="btn btn-outline-dark download_btn"
+              data-bs-toggle="modal"
+              data-bs-target="#popupModal">
+              <i class="fa-solid fa-download nav-icon"></i> Download Brochure
+            </button>
+          </div>
+        </div>
+      </section>
+      <!--Overview Section  Ends -->
+
+      <!-- Gallery Section -->
+      <section id="gallery_section" class="container p-4 mt-3">
+        <div>
+          <h2 class="section-heading">GALLERY</h2>
+        </div>
+
+        <div class="section-content">
+          <!-- Gallery -->
+          <div class="container">
+            <div class="row row-cols-1 row-cols-md-4">
+              <div class="col-12 col-md-4 col-lg-3 g-3 gal-img">
+                <img
+                  class="img-fluid"
+                  data-fancybox="gallery"
+                  src="img/gallery/gal1.jpg"
+                  data-src="img/gallery/gal1.jpg"
+                  alt="" />
+              </div>
+
+              <div class="col-12 col-md-4 col-lg-3 g-3 gal-img">
+                <img
+                  class="img-fluid"
+                  data-fancybox="gallery"
+                  src="img/gallery/gal2.jpg"
+                  data-src="img/gallery/gal2.jpg"
+                  alt="" />
+              </div>
+
+              <div class="col-12 col-md-4 col-lg-3 g-3 gal-img">
+                <img
+                  class="img-fluid"
+                  data-fancybox="gallery"
+                  src="img/gallery/gal3.jpg"
+                  data-src="img/gallery/gal3.jpg"
+                  alt="" />
+              </div>
+
+              <div class="col-12 col-md-4 col-lg-3 g-3 gal-img">
+                <img
+                  class="img-fluid"
+                  data-fancybox="gallery"
+                  src="img/gallery/gal4.jpg"
+                  data-src="img/gallery/gal4.jpg"
+                  alt="" />
+              </div>
+
+              <div class="col-12 col-md-4 col-lg-3 g-3 gal-img">
+                <img
+                  class="img-fluid"
+                  data-fancybox="gallery"
+                  src="img/gallery/gal5.jpg"
+                  data-src="img/gallery/gal5.jpg"
+                  alt="" />
+              </div>
+
+              <div class="col-12 col-md-4 col-lg-3 g-3 gal-img">
+                <img
+                  class="img-fluid"
+                  data-fancybox="gallery"
+                  src="img/gallery/gal6.jpg"
+                  data-src="img/gallery/gal6.jpg"
+                  alt="" />
+              </div>
+
+              <div class="col-12 col-md-4 col-lg-3 g-3 gal-img">
+                <img
+                  class="img-fluid"
+                  data-fancybox="gallery"
+                  src="img/gallery/gal7.jpg"
+                  data-src="img/gallery/gal7.jpg"
+                  alt="" />
+              </div>
+
+              <div class="col-12 col-md-4 col-lg-3 g-3 gal-img">
+                <img
+                  class="img-fluid"
+                  data-fancybox="gallery"
+                  src="img/gallery/gal8.jpg"
+                  data-src="img/gallery/gal8.jpg"
+                  alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Gallery Section Ends -->
+
+      <!-- Configuration Section -->
+      <section id="configuration_section" class="container p-4 mt-3 mb-3">
+        <div class="container">
+          <div class="config-block">
+            <h2 class="text-center section-heading wow fadeInUp">
+              Configuration
+            </h2>
+            <div class="row">
+              <div class="col-lg-5 col-xs-12">
+                <div class="config-inner">
+                  <h5>1 BHK</h5>
+                  <!-- p>RERA carpet area - 402 Sq.ft.(37 Sq.m)<br>Deck Area- 24 Sq.ft.(2.23 Sq.m.)</p> -->
+                  <div
+                    class="config-price"
+                    data-bs-toggle="modal"
+                    data-bs-target="#popupModal">
+                    <a href="javascript:void(0)" class="pricepop">
+                      ₹ 49.99 Lakhs Onwards*
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-5 col-xs-12">
+                <div class="config-inner">
+                  <h5>2 BHK</h5>
+                  <!-- p>RERA carpet area - 402 Sq.ft.(37 Sq.m)<br>Deck Area- 24 Sq.ft.(2.23 Sq.m.)</p> -->
+                  <div
+                    class="config-price"
+                    data-bs-toggle="modal"
+                    data-bs-target="#popupModal">
+                    <a href="javascript:void(0)" class="pricepop">
+                      ₹ Contact for Price
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+      <!-- Amenities Section -->
+      <section id="amenities_section" class="container p-4 mt-3">
+        <div>
+          <h3 class="section-heading">Amenities</h3>
+        </div>
+        <!-- Amenities  -->
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 col-lg-3">
+              <figure class="fig_img red">
+                <img
+                  class="img-fluid"
+                  src="img/amenities/amenities1.jpg"
+                  alt="sample33" />
+                <figcaption>
+                  <h3>Gated <span> Community</span></h3>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3">
+              <figure class="fig_img blue">
+                <img
+                  class="img-fluid"
+                  src="img/amenities/amenities2.jpg"
+                  alt="sample33" />
+                <figcaption>
+                  <h3>Indoor <span> Gym</span></h3>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3">
+              <figure class="fig_img">
+                <img
+                  class="img-fluid"
+                  src="img/amenities/amenities3.jpg"
+                  alt="sample33" />
+                <figcaption>
+                  <h3>CCTV <span> Surveillance </span></h3>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3">
+              <figure class="fig_img red">
+                <img
+                  class="img-fluid"
+                  src="img/amenities/amenities4.jpg"
+                  alt="sample33" />
+                <figcaption>
+                  <h3>Indoor <span> Games</span></h3>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3">
+              <figure class="fig_img">
+                <img
+                  class="img-fluid"
+                  src="img/amenities/amenities5.jpg"
+                  alt="sample33" />
+                <figcaption>
+                  <h3>Kids <span> Play Area</span></h3>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3">
+              <figure class="fig_img blue">
+                <img
+                  class="img-fluid"
+                  src="img/amenities/amenities6.jpg"
+                  alt="sample33" />
+                <figcaption>
+                  <h3>Landscaped <span> Garden</span></h3>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3">
+              <figure class="fig_img red">
+                <img
+                  class="img-fluid"
+                  src="img/amenities/amenities7.jpg"
+                  alt="sample33" />
+                <figcaption>
+                  <h3>Car <span> Parking</span></h3>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3">
+              <figure class="fig_img">
+                <img
+                  class="img-fluid"
+                  src="img/amenities/amenities8.jpg"
+                  alt="sample33" />
+                <figcaption>
+                  <h3>Yoga & Meditation <span> Zone</span></h3>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Location Section -->
+      <section id="location_section" class="container p-4 shadow-sm">
+        <h2 class="section-heading">Location</h2>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <!-- Map Iframe -->
+              <div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15083.242365338245!2d73.0983913!3d19.0720636!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ebf75ca916a7%3A0x15c23de499271c83!2sSATYAM%20OASIS!5e0!3m2!1sen!2sin!4v1723450927046!5m2!1sen!2sin"
+                  width="100%"
+                  height="400"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="location_features_section m-3">
+                <!-- Features Tab Content -->
+                <div class="tab-content" id="pills-tablocContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="loca-0"
+                    role="tabpanel"
+                    aria-labelledby="pills-loca-0"
+                    tabindex="0">
+                    <!-- Connectivity Features -->
+                    <div class="container locaton-features">
+                      <h3 class="section-heading fs-4">
+                        Connectivity Features
+                      </h3>
+                      <div class="row row-cols-1">
+                        <div class="col my-2">
+                          <i class="fa-solid fa-check"></i>
+                          taloja metro station - 0 mins
+                        </div>
+
+                        <div class="col my-2">
+                          <i class="fa-solid fa-check"></i>
+                          taloja central railway station - 5 mins
+                        </div>
+
+                        <div class="col my-2">
+                          <i class="fa-solid fa-check"></i>
+                          KONKAN COASTAL ROAD
+                        </div>
+
+                        <div class="col my-2">
+                          <i class="fa-solid fa-check"></i>
+                          bharati Vidyapeeth School - 10 mins
+                        </div>
+
+                        <div class="col my-2">
+                          <i class="fa-solid fa-check"></i>
+                          navjeevan Hospital - 7 mins
+                        </div>
+
+                        <div class="col my-2">
+                          <i class="fa-solid fa-check"></i>
+                          tata memorial Hospital - 10 mins
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about_section" class="container-fluid p-4 mt-3">
+        <div class="about_overlay">
+          <div class="container pt-2">
+            <div class="row">
+              <div class="col-12 col-lg-6 p-5 about-para-container">
+                <div class="text-center">
+                  <h2 class="section-heading text-white">About Satyam Group</h2>
+
+                  <div class="text-white about-para">
+                    <p>
+                      Satyam Developers was founded by visionary CMD Mr. Rajesh
+                      D Gulati, a man who needs no introduction in the property
+                      market in Mumbai. His determination and vision has solely
+                      enabled the group to establish a strong brand image in the
+                      market and cater to the needs of our clients through his
+                      in-depth knowledge, experience, foresightedness and
+                      understanding of the dynamics of the real estate sector.
+                    </p>
+                    <span id="dots8" style="display: inline"></span>
+                    <span id="more8" style="display: none">
+                      <p>
+                        Investing in a variety of systematically identified
+                        businesses and making it well-diversified conglomerate
+                        with interests in a range of projects such as
+                        Residential, Premium Condominiums, Commercial Complexes,
+                        Integrated Modern Townships and Malls. We have been
+                        acknowledged for quality, commitment and reliability.
+                      </p></span
+                    >
+                  </div>
+                  <button
+                    onclick="toggleContent('dots8','more8', 'myBtn8')"
+                    class="read_more"
+                    id="myBtn8">
+                    Read More
+                  </button>
+                  <br />
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-6 p-5">
+                <div class="text-center">
+                  <h3 class="section-heading text-white">CONTACT US</h3>
+                  <!-- Form -->
+                  <div class="enquire-section ps-5 pe-5">
+                    <div class="container">
+                      <form id="contact-form" class="text-center">
+                        <div class="mb-3">
+                          <label for="user_name" class="form-label">Name</label>
+                          <input
+                            type="text"
+                            class="form-control inputStyle shadow-none"
+                            name="user_name"
+                            id="user_name"
+                            placeholder="Name"
+                            autocomplete="off"
+                            required />
+                        </div>
+                        <div class="mb-3">
+                          <label for="user_email" class="form-label"
+                            >Email address</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control inputStyle shadow-none"
+                            name="user_email"
+                            id="user_email"
+                            placeholder="Email Address"
+                            autocomplete="off" />
+                        </div>
+                        <div class="mb-3">
+                          <label for="contact_number" class="form-label"
+                            >Phone Number</label
+                          >
+                          <input
+                            type="tel"
+                            class="form-control inputStyle shadow-none"
+                            id="contact_number"
+                            name="contact_number"
+                            pattern="[0-9]{10}"
+                            placeholder="Phone Number"
+                            oninvalid="setCustomValidity('Please enter a valid phone number. e.g., 12345-67890')"
+                            oninput="setCustomValidity('')"
+                            minlength="10"
+                            maxlength="10"
+                            required />
+                        </div>
+
+                        <div
+                          class="d-flex ps-1 pb-2"
+                          style="font-size: 9px; color: #bfbfbf">
+                          <input
+                            type="checkbox"
+                            checked=""
+                            required=""
+                            class="custom-control-input custom-control-input-green"
+                            id="privacy_check"
+                            data-gtm-form-interact-field-id="0" />
+
+                          <label
+                            class="ps-2 pb-2 custom-control-label"
+                            for="privacy_check">
+                            I consent to the use of my provided data in
+                            accordance with the
+                            <a
+                              href="privacy_policy.html"
+                              target="_blank"
+                              style="font: inherit; color: inherit"
+                              >privacy policy</a
+                            >.</label
+                          >
+                        </div>
+
+                        <button
+                          type="submit"
+                          class="btn btn-primary submit-btn w-100">
+                          Submit
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Section Ends -->
+    </main>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container text-center text-white">
+        <div class="d-flex justify-content-center">
+          <!-- <div class="qrcode">
+                <img src="img/qr/qr.webp" class="m-2" />
+              </div> -->
+        </div>
+        <div>
+          <p>MahaRERA Registration No.: <span>P52000021613</span></p>
+
+          <p>
+            <a
+              href="https://maharera.mahaonline.gov.in"
+              style="color: #fff; text-decoration: none">
+              maharera.mahaonline.gov.in
+            </a>
+          </p>
+
+          <!-- <div class="text-center">
+                        <p class="contact_details">
+                            <b> Site Address:-</b> ---
+                            <br />
+                            <b> Contact No:-</b> +91 ---
+                            <br />
+                            <b> Email Address:-</b> support@---.com
+                        </p>
+                    </div> -->
+
+          <div>
+            <span>
+              Disclaimer : The information provided on this website is intended
+              exclusively for informational purposes and the pricing information
+              presented on this website is subject to alteration without advance
+              notification, and the assurance of property availability cannot be
+              guaranteed. The images showcased on this website are for
+              representational purposes only and may not accurately reflect the
+              actual properties. Please Note That This Is The Official Website
+              Of ------- by -----------.
+            </span>
+            <span id="dots20" style="display: inline"></span>
+            <span id="more20" style="display: none">
+              <span>
+                We May Share Data With Real Estate Regulatory Authority (RERA)
+                Registered Brokers/Companies For Further Processing As Required.
+                We May Also Send Updates And Information To The Mobile Number Or
+                Email ID Registered With Us. All rights reserved. The content,
+                design, and information on this website are protected by
+                copyright and other intellectual property rights. Any
+                unauthorized use or reproduction of the content may violate
+                applicable laws. For accurate and up-to-date information
+                regarding services, pricing, availability, and any other
+                details, it is recommended to contact us directly through the
+                provided contact information on this website. Thank you for
+                visiting our website.
+              </span>
+            </span>
+            <br />
+            <span
+              class="read_more2"
+              onclick="toggleContent('dots20','more20', 'myBtn20')"
+              id="myBtn20">
+              Read More
+            </span>
+          </div>
+
+          <p class="pb-4 pt-2">
+            <a
+              href="privacy_policy.html"
+              target="_blank"
+              style="text-decoration: none">
+              Privacy Policy
+            </a>
+            |
+            <a
+              href="termsandcondition.html"
+              target="_blank"
+              style="text-decoration: none">
+              Terms And Conditions
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Footer Fixed Button -->
+    <div class="container-fluid fixed-bottom action-footer-container">
+      <ul class="nav nav-fill action-footer">
+        <li class="nav-item ps-1">
+          <a
+            onclick="return gtag_report_conversion('https://wa.me/+91123456789 ');"
+            href="https://wa.me/+91123456789 "
+            class="text-decoration-none text-white">
+            <i class="fa-brands fa-whatsapp nav-icon"> </i> Whatsapp
+          </a>
+        </li>
+        <li class="nav-item ps-1">
+          <a
+            onclick="return gtag_report_conversion('tel:+91123456789 ');"
+            href="tel:+91123456789 "
+            class="text-decoration-none text-white">
+            <i class="fa-solid fa-phone me-2"></i> Call Us
+          </a>
+        </li>
+
+        <li
+          class="nav-item"
+          data-bs-toggle="modal"
+          data-bs-target="#popupModal">
+          <i class="fa-solid fa-download nav-icon"></i> Brochure
+        </li>
+      </ul>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="popupModal"
+      tabindex="-1"
+      aria-labelledby="ModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Title -->
+          <div class="modal-header">
+            <!-- <h1 class="modal-title fs-5" id="ModalLabel">Modal title</h1> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+
+          <!-- Modal Body -->
+          <div class="modal-body">
+            <div class="container text-center">
+              <img src="img/logo/logo.png" alt="" height="80px" />
+              <p class="mt-2">Register Here And Avail The Best Offers!!</p>
+            </div>
+            <div class="container">
+              <!--Enquire Form  -->
+              <div class="enquire-section">
+                <span class="d-block text-center fw-bold my-2">
+                  Get The Best Quote
+                </span>
+                <div class="container">
+                  <!-- Form -->
+                  <form id="contact-form-modal" class="text-center">
+                    <div class="mb-3">
+                      <label for="user_name_modal" class="form-label"
+                        >Name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control inputStyle shadow-none"
+                        name="user_name"
+                        id="user_name_modal"
+                        placeholder="Name *"
+                        autocomplete="off"
+                        required />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="user_email_modal" class="form-label"
+                        >Email address</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control inputStyle shadow-none"
+                        name="user_email"
+                        id="user_email_modal"
+                        placeholder="Email Address"
+                        autocomplete="off" />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="contact_number_modal" class="form-label"
+                        >Phone Number</label
+                      >
+                      <input
+                        type="tel"
+                        class="form-control inputStyle shadow-none"
+                        name="contact_number"
+                        id="contact_number_modal"
+                        minlength="10"
+                        maxlength="10"
+                        pattern="[0-9]{10}"
+                        placeholder="Phone Number *"
+                        oninvalid="setCustomValidity('Please enter a valid phone number. e.g., 12345-67890')"
+                        oninput="setCustomValidity('')"
+                        required />
+                    </div>
+
+                    <div
+                      class="d-flex ps-1 pb-2"
+                      style="font-size: 9px; color: #bfbfbf">
+                      <input
+                        type="checkbox"
+                        checked=""
+                        required=""
+                        class="custom-control-input custom-control-input-green"
+                        id="privacy_check_modal"
+                        data-gtm-form-interact-field-id="0" />
+
+                      <label
+                        class="ps-2 pb-2 custom-control-label"
+                        for="privacy_check_modal">
+                        I consent to the use of my provided data in accordance
+                        with the
+                        <a
+                          href="privacy_policy.html"
+                          target="_blank"
+                          style="font: inherit; color: inherit"
+                          >privacy policy</a
+                        >.</label
+                      >
+                    </div>
+
+                    <button type="submit" class="btn btn-primary submit-btn">
+                      Submit
+                    </button>
+                    <p class="m-2 form_norms">
+                      <span>
+                        Your contact details are safe with us. <br />
+                      </span>
+                      <span> Our team will be in touch with you soon.</span>
+                    </p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Footer -->
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
